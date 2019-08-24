@@ -1,0 +1,33 @@
+<app-sidebar></app-sidebar>
+
+<div class="adb-container">
+
+  <h2>Register new <span>client</span></h2>
+
+  <form class="mt-4">
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input type="text" class="form-control" [(ngModel)]="client.name" name="name" id="name" placeholder="Client name">
+    </div>
+    <div class="form-group">
+      <label for="name">Client ID</label>
+      <input type="text" class="form-control" [(ngModel)]="client.companyId" name="companyId" id="companyId"
+        placeholder="Client ID">
+    </div>
+    <div class="form-group">
+      <label for="campaign">Name of PoC</label>
+      <input type="text" class="form-control" [(ngModel)]="client.poc.name" name="poc_name" id="poc_name"
+        placeholder="Name of Point of Contact">
+    </div>
+    <div class="form-group">
+      <label for="description">Email address of PoC</label>
+      <input type="text" class="form-control" [(ngModel)]="client.poc.email" name="poc_email" id="poc_email"
+        placeholder="Email address of Point of Contact">
+    </div>
+
+    <div class="mt-5 d-flex align-items-end justify-content-end">
+      <a (click)="registerClient()" class="adb-btn">Register</a>
+    </div>
+  </form>
+
+</div>

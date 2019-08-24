@@ -1,0 +1,29 @@
+@import "../../../variables";
+
+.adb-estimate-container{
+  background-color: $accent;
+  max-height: 84vh;
+  border-radius: 8px;
+  padding: 24px 4px;
+  color: $text-primary !important;
+  
+
+  h3{
+    font-size: 1.2rem;
+    font-weight: 300;
+    text-align: center;
+  }
+  
+  table{
+    text-align: center;
+    color: $text-primary !important;
+  }
+
+  ul{
+    list-style: none;
+
+    li{
+      
+    }
+  }
+}

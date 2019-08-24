@@ -1,0 +1,60 @@
+@import "../../../_variables.scss";
+
+.adb-sidebar{
+
+  height: 100%;
+  width: $sidebar-width;
+  background-color: $accent;
+
+  position: fixed;
+  left: 0;
+  top: 0;
+
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+  justify-content: center;
+
+  .adb-nav-list{
+    display: flex;
+    flex-direction: column;
+
+    li{
+      margin-bottom: 16px;
+      width: 100%;
+      text-decoration: none;
+      padding: 8px 4px;
+      background-color: $black-30;
+      color: $text-primary;
+      text-align: left;
+      position: relative;
+      font-size: 0.9rem;
+      align-items: center;
+      justify-content: center;
+      
+
+      a{
+        text-decoration: none;
+        color: inherit;
+        font-weight: 300;
+        display: block;
+
+        span{
+          color: $secondary;
+          min-width: 16px;
+        }
+
+        &.active:before{ 
+          height: 100%;
+          width: 2.2px;
+          position: absolute;
+          background-color: $secondary;
+          top: 0;
+          left: 0;
+          content: '';
+        }
+      }
+    }
+  }
+
+}
